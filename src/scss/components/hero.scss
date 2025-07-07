@@ -29,7 +29,7 @@
   justify-content: center;
 
   @include media(desktop) {
-    max-width: 576px;
+    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
   }
