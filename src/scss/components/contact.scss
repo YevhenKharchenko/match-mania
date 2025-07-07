@@ -1,0 +1,139 @@
+.contact-section {
+  padding-bottom: 60px;
+
+  @include media(desktop) {
+    padding-bottom: 120px;
+  }
+}
+
+.contact-subtitle {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.contact-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.contact-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    gap: 40px;
+    max-width: 519px;
+  }
+}
+
+.contact-email-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    gap: 40px;
+  }
+}
+
+.email-icon {
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.contact-email-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #a3e635;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-email-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f1f5f9;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-top-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #a3e635;
+  margin-bottom: 6px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.contact-hashtag-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(241, 245, 249, 0.7);
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-bottom-wrapper {
+  @include media(desktop) {
+    max-width: 628px;
+  }
+}
+
+.contact-bottom-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #a3e635;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 36px;
+    margin-bottom: 100px;
+  }
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a3e635;
+  padding: 18.5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+
+  @include media(desktop) {
+    padding: 28.5px;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,28 @@
+.privacy-header {
+  background: #0f172a;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.privacy-header-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f1f5f9;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

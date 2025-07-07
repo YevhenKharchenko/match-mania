@@ -1,0 +1,164 @@
+.testimonials-section {
+  padding-bottom: 60px;
+}
+
+.testimonials-top-container {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.testimonials-controls-container {
+  margin-top: 40px;
+
+  @include media(desktop) {
+    margin-top: 60px;
+  }
+}
+
+.testimonials-container {
+  padding: 0;
+}
+
+.testimonials-subtitle {
+  margin-bottom: 0;
+}
+
+.testimonials-section-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.testimonials-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.testimonials-swiper-container {
+  max-width: 311px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.testimonials-swiper-container.show {
+  visibility: visible;
+}
+
+.testimonials-slide {
+  display: flex !important;
+  gap: 12px;
+  max-width: 311px;
+
+  @include media(desktop) {
+    gap: 24px;
+    max-width: 628px;
+  }
+}
+
+.testimonials-picture-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-text-wrapper {
+  max-width: 151px;
+
+  @include media(desktop) {
+    max-width: 302px;
+  }
+}
+
+.testimonials-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: left;
+  color: #a3e635;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.testimonials-profession {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 8px;
+  text-align: left;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.testimonials-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  text-align: left;
+  color: #f1f5f9;
+
+  @include media(desktop) {
+    font-size: 15px;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+
+  @include media(desktop) {
+    gap: 33px;
+    justify-content: end;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.3px solid #a3e635;
+  border-radius: 26px;
+  width: 52px;
+  height: 52px;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}

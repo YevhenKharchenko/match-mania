@@ -1,0 +1,76 @@
+:root {
+  font-family: 'Fredoka', sans-serif;
+  color: $_main_color;
+  background: $_main_bg_color;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+}
+
+.section {
+  scroll-margin-top: 90px;
+
+  @include media(desktop) {
+    scroll-margin-top: 160px;
+  }
+}
+
+.section-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+}
+
+.section-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #1e1e1e;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
