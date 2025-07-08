@@ -15,5 +15,8 @@
     <symbol id="icon-right-arrow" viewBox="0 0 32 32">
       <path fill="#fff" d="m16.776 16-5.947-5.947 1.81-1.81 7.758 7.758-7.758 7.758-1.81-1.81 5.947-5.947z" style="fill:var(--color1, #fff)"/>
     </symbol>
+    <symbol id="icon-back-arrow" viewBox="0 0 24 24">
+      <path d="M14 18L8 12L14 6L15.4 7.4L10.8 12L15.4 16.6L14 18Z" fill="white" />
+    </symbol>
   </defs>
 </svg>
